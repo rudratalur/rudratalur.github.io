@@ -2,52 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blogs | rudratalur</title>
-    <link href="style.css" rel="stylesheet"/>
+    <meta name="theme-color" content="#0a0f14">
+    <meta name="description" content="Rudratalur's notes and articles, with a growing focus on network automation and infrastructure.">
+    <title>Blogs | Rudratalur</title>
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand">IMDEVELOPER</div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navigation container" aria-label="Main navigation">
+        <a class="nav-brand" href="/">Rudratalur</a>
         <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link" href="/">Home</a>
-            </li>
-             <li class="list-item-inline">
-                <a class="link" href="project.html">Projects</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link link-active" href="blogs.html">Blogs</a>
-            </li>
+            <li class="list-item-inline"><a class="link" href="/">Home</a></li>
+            <li class="list-item-inline"><a class="link" href="/project.html">Projects</a></li>
+            <li class="list-item-inline"><a class="link link-active" href="/blogs.html" aria-current="page">Blogs</a></li>
         </ul>
     </nav>
-    <header class="hero">
-        <h1 class="hero-heading">Hello, <span class="hero-heading">Welcome to my document diaries!</span></h1>
-        <section class="section">
-            <div class="container container-center">
-                <h1>Sophia: The Humanoid Robot.</h1>
-            <small>Oct 2021</small>
-            <p>Sophia is a Humanoid Robot, Developed by Dr.David Hanson in Hang Kong based company Hanson Robotics, and activated on Feb 2016. She got the worlds first Robot citizenship from <a href="https://medium.com/@rudratalur07/sophia-the-humanoid-robot-8d5dbc5ce4a0">read more</a></p>
-            <br>
-            <a class="link link-primary" href="https://medium.com/@rudratalur07/sophia-the-humanoid-robot-8d5dbc5ce4a0" target="_blank">Read blog</a>
-            <br></br>
-            </div>
+
+    <main id="main-content">
+        <header class="hero">
+            <p class="eyebrow">FIELD NOTES</p>
+            <h1 class="hero-heading">Notes on <span class="heading-inverted">automation & technology</span></h1>
+            <p class="hero-intro">I’m learning and writing toward network automation, Python, infrastructure, and AI. These earlier articles remain here as part of that learning journey.</p>
+        </header>
+
+        <section class="section section-muted" aria-labelledby="sophia-heading">
+            <article class="container container-center">
+                <p class="eyebrow">EARLIER WRITING</p>
+                <h2 id="sophia-heading">Sophia: The Humanoid Robot</h2>
+                <small>Oct 2021</small>
+                <p>Sophia is a humanoid robot developed by Dr. David Hanson at Hong Kong-based company Hanson Robotics and activated in February 2016. She received the world’s first robot citizenship.</p>
+                <a class="link link-primary" href="https://medium.com/@rudratalur07/sophia-the-humanoid-robot-8d5dbc5ce4a0" target="_blank" rel="noopener noreferrer">Read the article</a>
+            </article>
         </section>
-    </header>
 
+        <section class="section" aria-labelledby="datatypes-heading">
+            <article class="container container-center">
+                <p class="eyebrow">EARLIER WRITING</p>
+                <h2 id="datatypes-heading">Data types in JavaScript</h2>
+                <small>Oct 2021</small>
+                <p>Inside the computer world, everything is data oriented. Data is stored in the form of bits. Bits are any kind of two-valued things.</p>
+                <a class="link link-primary" href="https://medium.com/@rudratalur07/data-types-in-javascript-2911bc93f323" target="_blank" rel="noopener noreferrer">Read the article</a>
+            </article>
+        </section>
+    </main>
 
-    <section class="section ow">
-        <div class="container container-center">
-            <h1>Data types in JavaScript.</h1>
-        <small>Oct 2021</small>
-        <p>Inside the computer world, everything is data oriented. Data is Stored in the form of bits. Bits are the any kind of two valued things described as <a href="https://medium.com/@rudratalur07/data-types-in-javascript-2911bc93f323" target="_blank">read more</a></p>
-        <br>
-        <a class="link link-primary" href="https://medium.com/@rudratalur07/data-types-in-javascript-2911bc93f323" target="_blank">Read blog</a>
-        <br></br>
-        </div>
-    </section>
-</header>
-
+    <footer class="footer">
+        <div class="footer-header">Connect with me</div>
+        <ul class="link-social list-non-bullet" aria-label="Social links">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/rudratalur" aria-label="GitHub">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/rudraswamy-k-ab26a818b/" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.instagram.com/rudratalur_dk/" aria-label="Instagram">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
 </html>

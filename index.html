@@ -2,73 +2,177 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home || Rudratalur</title>
-    <link href="style.css" rel="stylesheet"/>
-    <link href="/images/fevicon.png" rel="shortcut icon" type="image//png">
+    <meta name="theme-color" content="#0a0f14">
+    <meta name="description" content="Rudratalur — network automation, infrastructure development, network software, and AI.">
+    <title>Rudratalur | Network Automation & Infrastructure</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="/images/fevicon.png" rel="shortcut icon" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand">IMDEVELOPER</div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navigation container" aria-label="Main navigation">
+        <a class="nav-brand" href="/">Rudratalur</a>
         <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link link-active" href="/">Home</a>
-            </li>
-             <li class="list-item-inline">
-                <a class="link" href="project.html">Projects</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="blogs.html">Blogs</a>
-            </li>
+            <li class="list-item-inline"><a class="link link-active" href="/" aria-current="page">Home</a></li>
+            <li class="list-item-inline"><a class="link" href="/project.html">Projects</a></li>
+            <li class="list-item-inline"><a class="link" href="/blogs.html">Blogs</a></li>
         </ul>
     </nav>
-    <header class="hero">
-        <img class="hero-img" src="/images/Hero.jpg" alt="">
-        <h1 class="hero-heading">Rudratalur the <span class="heading-inverted">web developer</span></h1>
-    </header>
-    <section class="section ow">
-        <div class="container container-center">
-            <h1>technologies </h1>
-        <p>I'm familiar with HTML5, CSS3, JavaScript, Bootstrap, ReactJS, NodeJS, Git, Web Hosting, Python and C Programming.</p>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container container-center">
-            <h1>Projects</h1>
-            <p>I like to showcase my work and thus, you can see my projects hosted online.</p>
-            <a class="link link-primary" href="/project.html" target="_blank">See projects</a>
-        </div>
-    </section>
-    <section class="section ow">
-        <div class="container container-center">
-            <h1>Blogs</h1>
-            <p>I am working on some technical and non technical blogs. I like to document my journey of learning.</p>
-            <a class="link link-secondary" href="/blogs.html" target="_blank">Read Blogs</a>
-        </div>
-    </section>
+
+    <main id="main-content">
+        <header class="hero hero-home">
+            <div class="hero-content">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> NETWORK AUTOMATION · INFRASTRUCTURE · AI</p>
+                <p class="hero-greeting">Hello, I’m <span>Rudratalur</span>.</p>
+                <h1 class="hero-heading">I love <span class="heading-inverted">Building Automation for Network Infrastructure</span></h1>
+                <p class="hero-subtitle">Network Automation Engineer | Infrastructure Developer | AI Enthusiast</p>
+                <p class="hero-intro">I’m interested in using technology and AI to make network operations more programmable and observable. I’m exploring SONiC, data center networking, network software development, and practical ways AI can support network engineering.</p>
+                <div class="hero-actions">
+                    <a class="link link-primary" href="/project.html">Explore my work <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#foundation-heading">A little about me <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <div class="profile-console">
+                <div class="profile-console-header">
+                    <img class="profile-photo" src="images/Hero.jpg" alt="Portrait of Rudratalur" width="96" height="96" fetchpriority="high">
+                    <div class="profile-console-identity">
+                        <strong>Rudratalur</strong>
+                        <span>Network automation · Infrastructure</span>
+                    </div>
+                    <span class="console-indicator" aria-label="Portfolio online"></span>
+                </div>
+                <div class="console-titlebar">
+                    <span>FIELD CONSOLE</span>
+                    <span>~/network</span>
+                </div>
+                <div class="console-body">
+                    <div class="console-output" id="console-output" aria-live="polite" aria-relevant="additions text">
+                        <p><span class="console-prompt">$</span> whoami</p>
+                        <p class="console-response">A curious engineer exploring network automation, infrastructure, and AI.</p>
+                        <p><span class="console-prompt">$</span> help</p>
+                        <p class="console-response">Try <code>about</code>, <code>focus</code>, or <code>interests</code>.</p>
+                    </div>
+                    <form class="console-form" id="console-form">
+                        <label class="visually-hidden" for="console-input">Enter a profile command</label>
+                        <span class="console-prompt" aria-hidden="true">$</span>
+                        <input id="console-input" name="command" type="text" placeholder="type a command" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="console-help">
+                        <button type="submit" aria-label="Run command">↵</button>
+                    </form>
+                    <p class="console-help" id="console-help">Commands: about · focus · interests · clear</p>
+                </div>
+                <div class="console-footer">
+                    <span><i aria-hidden="true"></i> SYSTEMS CURIOUS</span>
+                    <span>BUILT WITH CURIOSITY</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="section" aria-labelledby="foundation-heading">
+            <div class="container container-wide">
+                <p class="eyebrow">FOUNDATION & NEXT STEPS</p>
+                <h2 id="foundation-heading" class="section-heading">Building from what I know</h2>
+                <div class="info-grid">
+                    <details class="info-card">
+                        <summary>
+                        <h3>Hands-on foundation</h3>
+                        </summary>
+                        <p>Python, JavaScript, HTML, CSS, Git, web hosting, and API integrations in existing projects.</p>
+                    </details>
+                    <details class="info-card">
+                        <summary>
+                        <h3>Learning and exploring</h3>
+                        </summary>
+                        <p>SONiC, network programmability, data center networking, observability, and AI-assisted network engineering.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" aria-labelledby="curiosity-heading">
+            <div class="container container-wide about-note">
+                <p class="eyebrow">BEYOND TECHNOLOGY</p>
+                <h2 id="curiosity-heading" class="section-heading">Curiosity keeps me learning.</h2>
+                <p class="section-copy">I love reading self-help books, and I’m naturally curious when listening to people. I enjoy learning from their experiences and seeing the world through different perspectives.</p>
+            </div>
+        </section>
+
+        <section class="section section-muted" aria-labelledby="projects-heading">
+            <div class="container container-wide">
+                <p class="eyebrow">CURRENT DIRECTION</p>
+                <h2 id="projects-heading" class="section-heading">Network automation & infrastructure</h2>
+                <p class="section-copy">This portfolio is shifting toward practical network automation and infrastructure work. Network-specific projects will be added here as they’re ready to share; no unbuilt work is presented as completed.</p>
+                <a class="link link-primary" href="/project.html">Explore projects</a>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="writing-heading">
+            <div class="container container-wide">
+                <p class="eyebrow">FIELD NOTES</p>
+                <h2 id="writing-heading" class="section-heading">Learning in public</h2>
+                <p class="section-copy">I document what I learn, with a growing focus on network software, infrastructure, automation, and AI.</p>
+                <a class="link link-secondary" href="/blogs.html">Read the blogs</a>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="footer-header">Connect with me Here</div>
-        <ul class="link-social list-non-bullet">
+        <div class="footer-header">Connect with me</div>
+        <ul class="link-social list-non-bullet" aria-label="Social links">
             <li class="list-item-inline">
-                <a class="link" href="https://github.com/rudratalur"> <i class="fa fa-github fa-2x "
-                        aria-hidden="true"></i>
+                <a class="link" href="https://github.com/rudratalur" aria-label="GitHub">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="https://www.linkedin.com/in/rudraswamy-k-ab26a818b/">
-                    <i class="fa fa-linkedin fa-2x " aria-hidden="true"></i>
+                <a class="link" href="https://www.linkedin.com/in/rudraswamy-k-ab26a818b/" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="https://www.instagram.com/rudratalur_dk/">
-                    <i class="fa icon fa-instagram fa-2x " aria-hidden="true"></i>
+                <a class="link" href="https://www.instagram.com/rudratalur_dk/" aria-label="Instagram">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
-        
     </footer>
+    <script>
+        const consoleForm = document.querySelector("#console-form");
+        const consoleInput = document.querySelector("#console-input");
+        const consoleOutput = document.querySelector("#console-output");
+        const consoleCommands = {
+            about: "I’m Rudratalur — an infrastructure developer interested in network automation and AI.",
+            focus: "Exploring SONiC, data center networking, network software, observability, and AI-assisted engineering.",
+            interests: "I love reading self-help books and learning from people by listening to their experiences."
+        };
 
+        consoleForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const command = consoleInput.value.trim().toLowerCase();
+            if (!command) return;
+
+            if (command === "clear") {
+                consoleOutput.replaceChildren();
+                consoleInput.value = "";
+                return;
+            }
+
+            const commandLine = document.createElement("p");
+            const prompt = document.createElement("span");
+            prompt.className = "console-prompt";
+            prompt.textContent = "$ ";
+            commandLine.append(prompt, document.createTextNode(command));
+            consoleOutput.append(commandLine);
+
+            const response = document.createElement("p");
+            response.className = "console-response";
+            response.textContent = consoleCommands[command] || "Command not found. Try: about, focus, interests, clear.";
+            consoleOutput.append(response);
+            consoleInput.value = "";
+            consoleOutput.scrollTop = consoleOutput.scrollHeight;
+            consoleInput.focus();
+        });
+    </script>
 </body>
 </html>
