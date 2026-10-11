@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#0a0f14">
     <meta name="description" content="Rudratalur — network automation, infrastructure development, network software, and AI.">
     <title>Rudratalur | Network Automation & Infrastructure</title>
+    <script src="theme.js"></script>
     <link href="style.css" rel="stylesheet">
     <link href="/images/fevicon.png" rel="shortcut icon" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,6 +19,11 @@
             <li class="list-item-inline"><a class="link link-active" href="/" aria-current="page">Home</a></li>
             <li class="list-item-inline"><a class="link" href="/project.html">Projects</a></li>
             <li class="list-item-inline"><a class="link" href="/blogs.html">Blogs</a></li>
+            <li class="list-item-inline">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+                    <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+                </button>
+            </li>
         </ul>
     </nav>
 
@@ -90,29 +96,25 @@
             </div>
         </section>
 
-        <section class="section section-muted" aria-labelledby="curiosity-heading">
-            <div class="container container-wide about-note">
-                <p class="eyebrow">BEYOND TECHNOLOGY</p>
-                <h2 id="curiosity-heading" class="section-heading">Curiosity keeps me learning.</h2>
-                <p class="section-copy">I love reading self-help books, and I’m naturally curious when listening to people. I enjoy learning from their experiences and seeing the world through different perspectives.</p>
-            </div>
-        </section>
-
-        <section class="section section-muted" aria-labelledby="projects-heading">
-            <div class="container container-wide">
-                <p class="eyebrow">CURRENT DIRECTION</p>
-                <h2 id="projects-heading" class="section-heading">Network automation & infrastructure</h2>
-                <p class="section-copy">This portfolio is shifting toward practical network automation and infrastructure work. Network-specific projects will be added here as they’re ready to share; no unbuilt work is presented as completed.</p>
-                <a class="link link-primary" href="/project.html">Explore projects</a>
-            </div>
-        </section>
-
-        <section class="section" aria-labelledby="writing-heading">
-            <div class="container container-wide">
-                <p class="eyebrow">FIELD NOTES</p>
-                <h2 id="writing-heading" class="section-heading">Learning in public</h2>
-                <p class="section-copy">I document what I learn, with a growing focus on network software, infrastructure, automation, and AI.</p>
-                <a class="link link-secondary" href="/blogs.html">Read the blogs</a>
+        <section class="section highlights" aria-label="More about me">
+            <div class="container-wide highlights-grid">
+                <article class="highlight-card">
+                    <p class="eyebrow"><span>01</span> Beyond technology</p>
+                    <h2 id="curiosity-heading">Curiosity keeps me learning.</h2>
+                    <p>I love reading self-help books, and I’m naturally curious when listening to people. I enjoy learning from their experiences and seeing the world through different perspectives.</p>
+                </article>
+                <article class="highlight-card">
+                    <p class="eyebrow"><span>02</span> Current direction</p>
+                    <h2 id="projects-heading">Network automation & infrastructure</h2>
+                    <p>This portfolio is shifting toward practical network automation and infrastructure work. Network-specific projects will be added here as they’re ready to share; no unbuilt work is presented as completed.</p>
+                    <a class="highlight-link" href="/project.html">Explore projects <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="highlight-card">
+                    <p class="eyebrow"><span>03</span> Field notes</p>
+                    <h2 id="writing-heading">Learning in public</h2>
+                    <p>I document what I learn, with a growing focus on network software, infrastructure, automation, and AI.</p>
+                    <a class="highlight-link" href="/blogs.html">Read the blogs <span aria-hidden="true">↗</span></a>
+                </article>
             </div>
         </section>
     </main>
@@ -173,6 +175,7 @@
             consoleOutput.scrollTop = consoleOutput.scrollHeight;
             consoleInput.focus();
         });
+
     </script>
 </body>
 </html>
